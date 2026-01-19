@@ -1,0 +1,396 @@
+.ciljevi-container {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ciljevi-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.ciljevi-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.ciljevi-header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.ciljevi-content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.goals-intro {
+  margin-bottom: 3rem;
+}
+
+.goals-intro h2 {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.goals-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.add-goal-section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.add-goal-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.goal-form {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.875rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-goal-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-goal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.templates-section h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.template-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.template-card:hover {
+  border-color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.template-card h4 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.template-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.template-category {
+  display: inline-block;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.my-goals-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.no-goals {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.goal-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.goal-card:hover {
+  border-color: #667eea;
+  transform: translateX(5px);
+}
+
+.goal-card.completed {
+  background: rgba(76, 175, 80, 0.1);
+  border-color: #4caf50;
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.goal-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+  flex: 1;
+}
+
+.category-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.category-snaga {
+  background: rgba(102, 126, 234, 0.2);
+  color: #667eea;
+}
+
+.category-mršavljenje {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.category-kardio {
+  background: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+}
+
+.category-hipertrofija {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ff9800;
+}
+
+.category-mobilnost {
+  background: rgba(156, 39, 176, 0.2);
+  color: #9c27b0;
+}
+
+.goal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.goal-deadline {
+  color: #666;
+}
+
+.goal-deadline strong {
+  color: #333;
+}
+
+.goal-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-label {
+  color: #666;
+}
+
+.progress-label strong {
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s;
+  border-radius: 15px;
+}
+
+.goal-card.completed .progress-fill {
+  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+}
+
+.progress-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.progress-btn {
+  background: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.progress-btn:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+}
+
+.progress-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.completed-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tips-section {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.tips-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tip-item {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  line-height: 1.6;
+  color: #444;
+}
+
+.tip-item strong {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .ciljevi-header h1 {
+    font-size: 2rem;
+  }
+
+  .ciljevi-content {
+    padding: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .templates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-header {
+    flex-direction: column;
+  }
+
+  .completed-badge {
+    position: static;
+    margin-top: 1rem;
+  }
+}
+
